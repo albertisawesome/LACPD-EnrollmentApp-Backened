@@ -74,13 +74,14 @@ public class DemoApplication {
 	public static void boxUpload() throws IOException {
 		 System.out.println( "Hello World!" );
 	        
-	        
+	        // 3 arguments for BoxCCGAPIConnection.applicationServiceAcountConnection is ("client_id", "client_secret", "enterprise_id")
 	        BoxCCGAPIConnection api = BoxCCGAPIConnection.applicationServiceAccountConnection(
 	        	    "ffc823n3uuf15g5vooj45xg3eri29ukn",
 	        	    "I9r7ZIFUpEUiNpTlDpfE9WVz4Wro4qrt",
 	        	    "873161760"
 	        	);
 	        
+		// Box user_id
 	        api.asUser("18429209010");
 	        
 	        String tmpdir = System.getProperty("java.io.tmpdir");
